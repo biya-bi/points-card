@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE gsa-template SYSTEM "dynamosystemresource:/atg/dtds/gsa/gsa_1.0.dtd">
+
+<gsa-template>
+	<item-descriptor name="pointsCard">
+		<table name="points_card" id-column-name="id" type="primary">
+			<property name="id" column-name="id" data-type="int" />
+			<property name="creationDate" column-name="creation_date"
+				data-type="timestamp" />
+			<property name="expiryDate" column-name="expiry_date"
+				data-type="timestamp" />
+			<property name="points" column-name="points" data-type="int" />
+			<property name="number" column-name="card_number" data-type="string" />
+		</table>
+	</item-descriptor>
+</gsa-template>
