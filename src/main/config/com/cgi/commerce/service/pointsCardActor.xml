@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<actor-template default-chain-id="points" xsi:noNamespaceSchemaLocation="http://www.atg.com/xsds/actorChain_1.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <actor-chain id="points" transaction="TX_SUPPORTS">
+        <component id="pointsCardService" name="/com/cgi/commerce/service/PointsCardService" method="getPoints"
+            component-var="pointsCardService" method-return-var="points">
+            <input name="cardNumbers" class-name="java.util.List" value="${param.cardNumbers}" />
+            <output id="points" name="points" value="${points}" />
+        </component>
+    </actor-chain>
+</actor-template>
